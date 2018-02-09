@@ -1,0 +1,7 @@
+Hour	 Distance Traveled
+---------------------------
+1		10.0 Miles
+2		20.0 Miles
+3		30.0 Miles
+4		40.0 Miles
+5		50.0 Miles
