@@ -20,7 +20,7 @@ public class Largest4_10 {
 		
 	
 		System.out.println("Instructions: The computer will prompt you for a");
-		System.out.println("number value each time until you enter the number" + "\'\n-99'");
+		System.out.println("number value each time until you enter the number:" + "-99");
 		
 		System.out.print("Enter a number: ");			
 		value = input.nextInt();
