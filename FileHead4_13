@@ -1,0 +1,46 @@
+import java.util.*;
+import java.io.*;
+
+
+public class FileHead4_13 {
+	
+	public static void main(String[] args) throws IOException
+	{ 
+		
+		Scanner input = new Scanner(System.in);
+		
+	
+		System.out.println("Enter a file name: ");
+		String fileName = input.nextLine();
+		
+	
+		File file = new File(fileName + ".txt");
+		
+	
+		if(!file.exists()){
+			System.out.println("The file " + fileName + ".txt does not exist.");
+			System.exit(0);
+		}
+	
+		// Instantiate scanner with file
+		Scanner inputFile = new Scanner(file);
+		
+	
+
+	
+		String line;
+		
+
+		int counter = 0;
+		
+	
+		while(inputFile.hasNext()){
+			line = inputFile.nextLine();
+			if(counter < 5)
+				System.out.println(line);
+			counter += 1;
+		}
+
+		inputFile.close();
+	}
+}
