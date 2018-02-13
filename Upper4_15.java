@@ -1,11 +1,9 @@
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
 
 
-public class Upper4_15 {
+public class test {
     public static void main(String[] args) throws IOException 
     {
         
@@ -13,19 +11,16 @@ public class Upper4_15 {
        String upperCase ;
         String fileToConvert;
         
-        
-        
-        
         Scanner keyboard = new Scanner (System.in);
 
      
 
         System.out.print(" Enter the Filename : ");
-        String filename1 =keyboard.nextLine();
+        String filename1 = keyboard.nextLine();
         
         
          System.out.print(" Enter the Filename : ");
-         String filename2 =keyboard.nextLine();
+         String filename2 = keyboard.nextLine();
         
          
          
@@ -65,17 +60,3 @@ public class Upper4_15 {
              
     }
 }
-           
-            
-            
-
-        
-            
-           
-               
-       
-        
-        
-		
-        
- 
