@@ -2,38 +2,29 @@ import java.util.*;
 import java.io.*;
 
 
-public class Line4_14 {
+public class test {
 
 	public static void main(String[] args) throws IOException{
-		// Create Scanner Object
-		Scanner input = new Scanner(System.in);
 		
-
+		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the file name: ");
 		String fileName = input.nextLine();
 		
 	
-		File file = new File(fileName + ".txt");
+		File file = new File(fileName );
 		
 		
 		if(!file.exists()){
-		 System.out.println("The file " + fileName + ".txt does not exist.");
+		 System.out.println("The file " + fileName + " does not exist.");
 		 System.exit(0);
 		}
 		
-
 		Scanner inputFile = new Scanner(file);
 		
-	
-		String line;
-		
-	
 		int counter = 0;
-		
-		
 		while(inputFile.hasNext()){
 			counter += 1;
-			line = inputFile.nextLine();
+			String line = inputFile.nextLine();
 			System.out.println(counter + ": " + line);
 		}
 	}
