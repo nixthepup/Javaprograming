@@ -22,7 +22,7 @@ public class FileHead4_13 {
 			System.exit(0);
 		}
 	
-		// Instantiate scanner with file
+		
 		Scanner inputFile = new Scanner(file);
 		
 	
