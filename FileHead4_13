@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class FileHead4_13 {
+public class test {
 	
 	public static void main(String[] args) throws IOException
 	{ 
@@ -14,11 +14,11 @@ public class FileHead4_13 {
 		String fileName = input.nextLine();
 		
 	
-		File file = new File(fileName + ".txt");
+		File file = new File(fileName);
 		
 	
 		if(!file.exists()){
-			System.out.println("The file " + fileName + ".txt does not exist.");
+			System.out.println("The file " + fileName + " does not exist.");
 			System.exit(0);
 		}
 	
