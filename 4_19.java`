@@ -1,15 +1,19 @@
 import javax.*;
-import java.util*;
+import java.util.*;
 
-public class ESP{
+public class esp{
+
+
 public static void main(String[] args){
-Random ranom =new Random();
+Random random =new Random();
 int colorIndex;
-colorIndex = random.nextInt(5);
+
 String comcolor;
 String userguessedColor;
+int usercorrectguess = 0;
 
-
+for(int i =1; i<= 10; i++){
+colorIndex = random.nextInt(5);
 switch(colorIndex){
 case0:
 comcolor = "Red"
@@ -38,4 +42,5 @@ break;
 }
 userguessedColor = JOptionPane.showInputDialog("I have picked a color( Red,Green,Blue,Organe,Yellow) guess what it is:");
 
-if(
+if(userguessedColor.equalsIgnoreCase( comcolor)){
+	usercorrectguess = usercorrectguess +1;
