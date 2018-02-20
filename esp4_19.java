@@ -1,6 +1,5 @@
 import javax.swing.JOptionPane;
-import java.util.Scanner;
-import java.util.Random;
+import java.util.*;
 public class esp4_19{
 
 
