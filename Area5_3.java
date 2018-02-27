@@ -2,45 +2,69 @@
    You must complete this program so it calculates
    and displays the area of a rectangle. 
 */
-import javax.swing.JOptionPane;
-// Insert any necessary import statements here.
 
+// Insert any necessary import statements here.
+import javax.swing.*;
 public class Area5_3
 {
+  public static void main(String[] args) 
+  {  
+      
 
-		  
-	public static double len()
-	  {
-       
-	  return Double.parseDouble(JOptionPane.showInputDialog("Insert the length"));
-	  }
-	  
-	public static double wid()
-	  {
-     
-	  return Double.parseDouble(JOptionPane.showInputDialog("Insert the width"));
-	  }
-	  
-	  
-	public static double ar(double length, double width)
-	{
-	
-		return length*width;
-		
-	}  
-	  
-	public static void so(double area, double width, double length)
-	{
-		System.out.println("Length: " + length + " Width: " + width + " Area: " + area);
-	}
-	  
-   public static void main(String[] args)
-   {
-      double length, width, area;      
-	
-	length = len();
-	width = wid();
-	area = ar(length, width);
-	so(area, width, length);
+
+  
+      double length;    // The rectangle's length
+      double width;     // The rectangle's width
+      double area;      // The rectangle's area
+
+      // Get the rectangle's length from the user.
+      length = getLength();
+
+      // Get the rectangle's width from the user.
+      width = getWidth();
+
+      // Get the rectangle's area.
+      area = getArea(length, width);
+
+      // Display the rectangle data.
+      displayData(length, width, area);
+
+      System.exit(0);
    }
+
+   public static double getLength()
+   {
+    
+
+      String input = JOptionPane.showInputDialog("Enter the  length.");
+      return Double.parseDouble(input);
+   }
+
+
+   public static double getWidth()
+   {
+              
+
+      String input = JOptionPane.showInputDialog("Enter the  width.");
+      return Double.parseDouble(input);
+   }
+
+
+   public static double getArea(double length, double width)
+   {
+      return length * width;
+   }
+   
+   public static void  displayData (double length, double width, double area)
+   {
+    JOptionPane.showMessageDialog(null," Length " + length + " * Width " 
+            + width + " = " + area );
+   }
+  
+
+
+
+
+
 }
+
