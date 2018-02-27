@@ -5,7 +5,7 @@
 import javax.swing.JOptionPane;
 // Insert any necessary import statements here.
 
-public class AreaRectangle
+public class Area5_3
 {
 
 		  
