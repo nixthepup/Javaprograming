@@ -1,0 +1,80 @@
+import java.util.*;
+import java.io.*;
+import java.*;
+public class test
+{
+
+
+	
+	public static void main(String[] args) throws IOException {
+
+		String filename;
+		Scanner input = new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
+		
+	System.out.print("Enter the filename: ");
+filename = keyboard.nextLine();
+		
+		int sales = 0;
+		
+		System.out.print("Enter today's sales for store 1: ");
+		int sales1 = input.nextInt();
+		
+		System.out.print("Enter today's sales for store 2: ");
+		int sales2 = input.nextInt();
+		
+		System.out.print("Enter today's sales for store 3: ");
+		int sales3 = input.nextInt();
+		
+		System.out.print("Enter today's sales for store 4: ");
+		int sales4 = input.nextInt();
+		
+		System.out.print("Enter today's sales for store 5: ");
+		int sales5 = input.nextInt();
+		
+
+
+
+File file = new File(filename);
+if (file.exists())
+{
+	System.out.println("the files does not exist!");
+	System.exit(0);
+}
+
+PrintWriter outputFile = new PrintWriter(file);
+
+
+		outputFile.println("");
+		
+	
+		outputFile.println("SALES BAR CHART");
+		for(int k = 1; k <= 5; k++){
+			outputFile.println("Store " + k + ": ");
+			switch(k){
+			case 1:
+				sales = sales1;
+				break;
+			case 2:
+				sales = sales2;
+				break;
+			case 3:
+				sales = sales3;
+				break;
+			case 4: 
+				sales = sales4;
+				break;
+			case 5:
+				sales = sales5;
+			}
+			for(int l=1; l<=sales/100; l++){
+				outputFile.println("*");
+				
+			}
+			
+			outputFile.println("");
+		}
+		outputFile.close();
+		
+	}
+}
