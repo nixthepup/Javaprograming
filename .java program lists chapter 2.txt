@@ -1,0 +1,15 @@
+5 = SalesPre
+6 = LandCal
+7 = Salestax
+8 = CookieCalorier
+9 = MPG
+10 = TestAverage
+11 = CiruitBoardProfit
+12 = StringManipulator
+13 = RestairantBill
+14 = MaleAndFemale
+15 = StockCommission
+16 = EnergyDrinkConsumption
+17 = IngredientAdjuster
+18 = word
+19 = StockTransaction
